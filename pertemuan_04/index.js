@@ -1,5 +1,5 @@
 /*
-    1. function
+    1. Function
 */
 
 function penjumlahanDuaBujurSangkar(a,b) {
