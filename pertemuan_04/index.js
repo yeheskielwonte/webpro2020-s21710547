@@ -12,7 +12,6 @@ console.log(penjumlahanDuaBujurSangkar(9,4));
 const tambah=function(kali){
     return kali.a+kali.b;
 }
-
 function kali(a,b){
     return a*b;
 }
