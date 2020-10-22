@@ -76,9 +76,9 @@ const user = {
 //4. Kombinasi dengan Rest Operator
 
 const colors = ["merah","kuning","hijau","biru"];
-
-let [warna, ...lainnya] = colors;
-console.log(warna, lainnya);
+console.log(colors);
+// let [warna, ...lainnya] = colors;
+// console.log(warna, lainnya);
 
 
 
