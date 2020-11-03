@@ -42,7 +42,22 @@ const getName = id =>{
         },2000)
     })
 }
-getData()
-    .then(id =>getName(id))
-    .then(success => console.log(success))
-    .catch(error=>{console.log(error)})
+
+// getData()
+//     .then(id =>getName(id))
+//     .then(success => console.log(success))
+//     .catch(error=>{console.log(error)})
+
+const getNameById = async () => {
+    let id,success;
+    try {
+        id = await getData();
+        success = await getName(id);
+        // console.log(success);
+    } catch (error) {
+        console.log(error);
+    }
+    return success;
+}
+
+getNameById().then(result=>console.log(result))
